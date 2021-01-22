@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="an art school focusing on painting, sculpture">
+    <meta name="keywords" content="university, college, school, art">
+    <meta name="author" content="Lisa Abeles">
+    <!--[if IE]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html.js"></script>
+   <![endif]-->
+    <title>Donate to Yale School of Art</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+<body>
+    
+    <div id="container">
+       
+        <header>
+            <div class="wrapper">
+                <h1>Yale School of Art</h1>
+                <p class="giveNow"><a href="../pages/give_now.html"><span class="fas fa-gift"></span> Give Now</a></p>
+                <p><a href="../index.html"><img src="../images/yale_logo.png" alt="Yale Logo"></a></p>    
+            </div>
+        </header>
+    
+        <nav id="menu">
+         <div class="wrapper">
+               <label for="showMenu" class="showMenu"><span class="fas fa-bars" aria-hidden="true"></span></label>
+           <input type="checkbox" id="showMenu" role="button">
+           <ul class="mainMenu">
+                <li><a href="https://www.art.yale.edu/">Students</a><label for="sm" class="dropIcon"><span class="fas fa-caret-down" aria-hidden="true"></span></label><input type="checkbox" id="sm">
+                    <ul class="subMenu">
+                        <li><a href="https://www.art.yale.edu/">Admissions</a></li>
+                        <li><a href="https://www.art.yale.edu/about/resources/courses">Classes</a></li>
+                        <li><a href="https://www.art.yale.edu/">Student Portal</a></li>
+                        <li><a href="https://www.art.yale.edu/about/resources/financial-aid">Financial Aid</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.art.yale.edu/about/study-areas/graduate-study-areas">Programs</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+           </div>
+        </nav>
+      
+    
+<main id="wrapper">
+        <aside>
+            <ul>
+                <li><a href="https://www.art.yale.edu/">Admissions</a></li>
+                <li><a href="https://www.art.yale.edu/about/resources/courses">Classes</a></li>
+                <li><a href="https://www.art.yale.edu/">Student Portal</a></li>
+                <li><a href="https://www.art.yale.edu/about/resources/financial-aid">Financial Aid</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </aside>
+    
+       <section class="formBox">
+        
+      <form action="mailto:lisamabeles@gmail.com" method="post" id="infoForm">
+        
+         <fieldset id="giftAmount">
+          <h3>Gift Amount</h3>
+          <ul class="radioWrap">
+              <li>
+                  <label for="gift100"><input type="radio" name="rad" id="gift100"><span></span> 100</label></li>
+              <li>
+                  <label for="gift250"><input type="radio" name="rad" id="gift250"><span></span> 250</label></li>
+              <li>
+                  <label for="gift500"><input type="radio" name="rad" id="gift500"><span></span> 500</label></li>
+              <li>
+                  <label for="giftThousand"><input type="radio" name="rad" id="giftThousand"><span></span> 1000</label></li>
+              <li>
+                  <label for="gift"><input type="radio" name="rad" id="gift"><span></span> Other</label></li>
+          </ul>
+        </fieldset>  <!--   end giftAmount-->
+      
+        <fieldset id="giftFrequency">
+            <h3>Gift Frequency</h3>
+              <ul class="radioWrap">
+                  <li><label for="oneTime"><input type="radio" name="rad" id="oneTime"><span></span> One-Time Gift</label></li>
+                  <li><label for="scheduled"><input type="radio" name="rad" id="scheduled"><span></span> Scheduled Gift Payments</label></li>
+                  <li><label for="reocurring"><input type="radio" name="rad" id="reocurring"><span></span> Reocurring Gift</label></li>
+              </ul>
+      </fieldset>  <!--   end giftFrequency-->
+      
+      <fieldset id="donorInfo">
+          <legend>Donor Info</legend>
+              <label for="fname"><span class="fa fa-user"></span> Full Name</label><input type="text" id="fname" name="name" required>
+                               
+          <label for="email"><span class="fa fa-envelope"></span> Email<input type="text" id="email" name="email" placeholder="ex: john@email.com" required></label>
+                               
+              <label for="tel"><span class="fas fa-phone"></span> Phone number</label><input type="text" id="tel" name="telephone">
+                               
+              <label for="address"><span class="fas fa-address-card"></span> Address</label><input type="text" id="address" name="address">
+              
+              <label for="city"><span class="fa fa-city"></span> City</label><input type="text" id="city" name="city">
+              
+              <label for="state">State</label>
+              <input type="text" id="state" name="state">
+              
+              <label for="zip">Zip</label>
+              <input type="text" id="zip" name="zip">
+              
+            <div class="textOption">
+               <label for="textOption">Receive occasional texts from Yale</label>
+                    <select id="textOption" name="textOption">
+                        <option value="choose">Please Choose</option>
+                        <option value="yes">Yes, please</option>
+                        <option value="no">No, thank you</option>
+                    </select>
+            </div>  
+        </fieldset> <!--   end donorInfo-->
+            
+        <fieldset id="payment">
+            <legend>Billing</legend>
+            <label for="fname">Accepted Cards</label>
+                <div class="icon-container">
+                    <span class="fab fa-cc-visa"></span>
+                    <span class="fab fa-cc-amex"></span>
+                    <span class="fab fa-cc-mastercard"></span>
+                    <span class="fab fa-cc-discover"></span>
+                </div>
+            
+            <label for="cname">Name on card</label>
+            <input type="text" id="cname" name="cardname">
+            
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber">
+            
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth">
+
+            <label for="expyear">Exp Year</label>
+            <input type="text" id="expyear" name="expyear">
+       
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv">
+            
+            <label for="msg">Comments</label><textarea id="msg" name="comments"></textarea>
+            
+          <input type="submit" id="submit" value="Submit Gift">
+        </fieldset> <!--   end payment-->
+      
+    </form>         
+           
+    </section>      
+            
+    </main> 
+            
+    
+    <footer>
+        <section class="footWrapper">
+            
+            <ul class="contact">
+                <li><img src="../images/yale_logo.png" alt="Yale Logo"></li>
+                <li><p>1156 Chapel Street, POB 208339</p></li>
+                <li><p>New Haven, Connecticut, 06520-8339</p></li>
+                <li><span class="fas fa-envelope-open-text"></span><a href="emailto:info@yale.edu"> info@yale.edu</a></li>
+                <li><span class="fas fa-phone-square-alt"></span> 203-432-2606</li>
+            </ul>
+        
+            <ul class="connect">
+                <li><p>Connect With Us</p></li>
+                <li><a href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a></li>    
+                <li><a href="https://www.instagram.com/"><span class="fab fa-instagram-square"></span></a></li>
+                <li><a href="https://twitter.com/?lang=en"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="https://www.youtube.com/?gl=US"><span class="fab fa-youtube"></span></a></li>
+            </ul>
+        
+        
+            <section class="privacyPolicy">
+                <p><a href="#">Privacy Policy</a> | <a href="#">Accessibility at Yale</a></p>
+                <p>Copyright&copy;2021 Yale University | All rights reserved</p>
+            </section>
+        
+        </section>
+    </footer>
+</div>
+    
+
+</body>
+</html>
