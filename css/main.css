@@ -19,7 +19,7 @@ orange #bd5319
 article, aside, nav, section, main, figure, video, audio, header, footer {
     display: block;
 }
-* {
+* {                            /* 1. Universal Selector*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -28,7 +28,7 @@ html {
     font-family: 'Nunito Sans', sans-serif;
     color: #4a4a4a;
 }
-#container {
+#container {                       /* 2. ID selector*/
     width: 100%;
     margin: 0 auto;
 }
@@ -56,7 +56,7 @@ header p {
     text-align: center;
     padding: 1em 0;
 }
-.giveNow a {
+.giveNow a {                 /* 3. class selector*/
     color: #fff;
     background-color: #bd5319;
     padding: .5em;
@@ -76,7 +76,7 @@ nav ul {
     list-style-type: none;
     display: none;
 }
-nav li {
+nav li {                        /* 4. descendant selector*/
     text-align: center;
     border-bottom: solid 1px #63aaff;
 }
@@ -88,7 +88,7 @@ nav ul li a {
     color: #00356b;
     text-transform: uppercase;
 }
-nav li:first-child {
+nav li:first-child {            /* 5. pseudo-class selector*/
     border-top: solid 1px #63aaff;
 }
 nav span {
@@ -102,13 +102,15 @@ nav span {
     color: #63aaff;
     cursor: pointer;
 }
-nav input[type=checkbox]:checked ~ ul {
+nav input[type=checkbox]:checked ~ ul {    /* 6. sibling selector */
     display: block;
 }
 nav input[type=checkbox] {
     display: none;
 }
-
+.active {
+    background-color: #63aaff;
+}
 
     /*subNav*/
 
@@ -124,7 +126,7 @@ span.fas.fa-caret-down {
 .subMenu li {
     background-color: #fff;
 }
-#showMenu:checked + ul.mainMenu {
+#showMenu:checked + ul.mainMenu {     /*7. adjecent sibiling selector*/
     display: block;
 }
 #menu #sm:checked + ul.subMenu {
@@ -378,10 +380,10 @@ input:focus, textarea:focus, select:focus {
     outline: none;
 }
 
-    
+   
     
 @media screen and (min-width: 700px)  {  
-    
+   
 /*****************************    
           HEADER             
 *****************************/    
@@ -399,7 +401,7 @@ input:focus, textarea:focus, select:focus {
         order: 1;
         margin: 1.3em 1em 0;
     }
-    .giveNow a:hover, input[type="submit"]:hover {
+    .giveNow a:hover {
         background-color: #63aaff;
     }
     main {
@@ -420,6 +422,11 @@ input:focus, textarea:focus, select:focus {
         padding: 1em 1em 1em 3em;
         text-transform: uppercase;
     }
+/*
+    aside ul li a:visited {
+        color: #63aaff;
+    }
+*/
     aside ul li a:hover {
         background-color: #63aaff;
     }
@@ -439,10 +446,6 @@ input:focus, textarea:focus, select:focus {
         display: inline-block;
         border-bottom: none;
     }
-    nav ul li a {
-        padding: 1em 2em;
-        font-size: 1em;
-    }
     nav li:first-child {
         border-top: none;
     }
@@ -455,14 +458,24 @@ input:focus, textarea:focus, select:focus {
     ul .subMenu {
         display: none;
     }
+    nav ul li a {
+        padding: 1em 2em;
+        font-size: 1em;
+    }
+/*
+    nav ul li a:visited {
+        color: #63aaff;
+    }
+*/
     nav ul li a:hover {     
         background-color: #63aaff;
+        color: #ddd;
     }
     nav ul li a:active {
         background-color: #63aaff;
-        color: #fff;
+        color: #ddd;
     }
-    
+
     /*****************************    
           MAIN            
     *****************************/    
@@ -489,26 +502,19 @@ input:focus, textarea:focus, select:focus {
         grid-area: contact;
         margin-top: .2em;
     }
-    .contact a:hover {
-        color: #ddd;
-    }
     ul.connect {
         grid-area: connect;
         margin: 1em;
     }
-    ul.connect li a:hover {
-    color: #ddd;
-    } 
     .privacyPolicy {
         grid-area: priv;
     }
     .privacyPolicy a {
         font-size: 1em;
     }
-    .privacyPolicy a:hover {
-    color: #ddd;
+    footer a:hover, ul.connect li a:hover {
+        color: #ddd;
     }
-
     
     /*****************************    
           GIVE NOW PAGE            
