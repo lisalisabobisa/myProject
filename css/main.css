@@ -369,7 +369,7 @@ textarea {
 input[type="submit"] {
     padding: 1em 1.5em;
     background-color: #bd5319;
-    color: #ddd;
+    color: #fff;
     border: none;
     font-size: 1.2em;
     margin-left: 30%;
@@ -422,17 +422,16 @@ input:focus, textarea:focus, select:focus {
         padding: 1em 1em 1em 3em;
         text-transform: uppercase;
     }
-/*
     aside ul li a:visited {
         color: #63aaff;
     }
-*/
     aside ul li a:hover {
         background-color: #63aaff;
+        color: #ddd;
     }
     aside ul li a:active {
         background-color: #63aaff;
-        color: #fff;
+        color: #ddd;
     }
     
     /*****************************    
@@ -462,11 +461,9 @@ input:focus, textarea:focus, select:focus {
         padding: 1em 2em;
         font-size: 1em;
     }
-/*
     nav ul li a:visited {
         color: #63aaff;
     }
-*/
     nav ul li a:hover {     
         background-color: #63aaff;
         color: #ddd;
@@ -475,7 +472,7 @@ input:focus, textarea:focus, select:focus {
         background-color: #63aaff;
         color: #ddd;
     }
-
+    
     /*****************************    
           MAIN            
     *****************************/    
@@ -526,7 +523,9 @@ input:focus, textarea:focus, select:focus {
     grid-column-gap: 15px;
     margin: 1em;
     }
- 
+    input[type="submit"]:hover {
+        background-color: #63aaff;
+    }
     
 }
 
